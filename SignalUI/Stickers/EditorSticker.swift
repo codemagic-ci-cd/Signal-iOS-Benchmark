@@ -303,7 +303,7 @@ private class AnalogClockLayer: CALayer {
             updateSublayerFrames()
         }
     }
-
+    @MainActor
     init(style: Style, date: Date) {
         self.clockStyle = style
         self.date = date
