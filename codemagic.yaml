@@ -78,7 +78,7 @@ workflows:
       - *bundleInstall
       - *buildAndTest
   ios-mac-studio-m4-parallel-workflow:
-    name: iOS iOS Mac Studio M4 Max Parallel Workflow
+    name: iOS Mac Studio M4 Max Workflow
     environment:
       <<: *env_versions
     triggering:
