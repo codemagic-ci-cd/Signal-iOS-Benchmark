@@ -35,7 +35,7 @@ public enum EditorSticker {
     public enum StorySticker {
         case clockDigital(DigitalClockStyle)
         case clockAnalog(AnalogClockStyle)
-
+        @MainActor
         func previewView() -> UIView {
             switch self {
             case .clockDigital(let digitalClockStyle):
