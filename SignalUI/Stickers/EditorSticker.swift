@@ -175,7 +175,7 @@ extension EditorSticker.StorySticker {
                 return #imageLiteral(resourceName: "clock-diver.pdf")
             }
         }
-
+        @MainActor
         func drawClock(date: Date) -> CALayer {
             return AnalogClockLayer(style: self, date: date)
         }
